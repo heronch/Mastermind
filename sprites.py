@@ -41,6 +41,10 @@ def draw_colors(screen, colors):
         pygame.draw.rect(screen, color, (i * 50 + 350, 50, 40, 40))  
         pygame.draw.rect(screen, BLACK, (i * 50 + 350, 50, 40, 40), 1)  
 
+    pygame.draw.rect(screen, BLACK, (650, 450, 100, 40))  
+    pygame.draw.rect(screen, WHITE, (650, 450, 100, 40), 1) 
+    render_text(screen, "Clear", 675, 460) 
+    
     pygame.draw.rect(screen, BLACK, (650, 500, 100, 40))  
     pygame.draw.rect(screen, WHITE, (650, 500, 100, 40), 1)  
     render_text(screen, "Save", 675, 510)  

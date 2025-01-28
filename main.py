@@ -98,11 +98,7 @@ class Mastermind:
                         self.save_game()  
 
             draw_board(screen, self) 
-            draw_colors(screen, self.colors) 
-            
-            pygame.draw.rect(screen, BLACK, (650, 450, 100, 40))  
-            pygame.draw.rect(screen, WHITE, (650, 450, 100, 40), 1) 
-            render_text(screen, "Clear", 675, 460)  
+            draw_colors(screen, self.colors)  
 
             for i, color in enumerate(current_guess): 
                 pygame.draw.circle(screen, color, (i * 50 + 370, 120), 20)  
